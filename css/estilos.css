@@ -1,0 +1,163 @@
+/* ------reset----------- */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+/*----------------------------mobile-----------------------------*/
+@media screen and (max-width: 480px){
+    #grid_container{
+        height: 20vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "header"
+        "main"
+    }
+ 
+    header{
+        grid-area: header;
+    }
+
+    main{
+        grid-area: main;
+    }
+
+    #body{
+        background-color:rgb(43, 42, 42);
+        background-image: url(../img/img2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+        background-size: 800px;
+        border: 3px solid black;
+    }
+
+    .title{
+        font-size: 15px;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: aliceblue;
+        padding-top: 300px;
+    }
+    
+    .title1{
+        width: 10em;
+        height: 5ex;
+        background-color: gold;
+        border: 5px solid firebrick;
+        border-radius: 10px;
+        font-weight: bold;
+        color: black;
+        cursor: pointer;
+        text-decoration: none;
+      
+    }
+    .title1:hover{
+       background-color: bisque;
+    }
+}
+
+
+
+
+
+/*----------------------desktop------------------------------*/
+
+@media screen and (min-width: 481px){
+
+    #grid_container{
+
+
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "header"
+        "main"
+        "footer"
+        ;
+    
+    }
+
+    header{
+        grid-area: header;
+    }
+
+    main{
+        grid-area: main;
+    }
+
+    footer{
+        grid-area: footer;
+    }
+
+
+
+/*-------------------color de fondo index + img + tipografia---------*/
+#body{
+    background-color:rgb(43, 42, 42);
+    background-image: url(../img/img2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    background-size: 1000px;
+    border: 3px solid black;
+}
+
+#body1{
+background-color:rgb(43, 42, 42);
+background-image: url(https://images6.alphacoders.com/373/373654.jpg);
+background-repeat: no-repeat;
+background-position: center;
+height: 100vh;
+background-size: 1200px;
+
+}
+
+.title{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+    padding-left: 350px;
+    padding-top: 350px;
+    
+}
+
+.title1{
+    width: 10em;
+    height: 5ex;
+    background-color: gold;
+    border: 5px solid firebrick;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+  
+}
+.title1:hover{
+   background-color: bisque;
+}
+
+.btn{
+    font-size: 30px;
+   background-color: black;
+   
+}
+
+.button{
+   
+    padding-top: 10px;
+   padding-left: 45px;
+  
+   
+}
+
+
+}
